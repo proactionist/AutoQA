@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>엑셀 다운로드 - Auto QA 사용 가이드</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Guide detail page minor styles */
+    .guide-wrap { max-width: 900px; margin: 0 auto; padding: 72px 20px; }
+    .breadcrumb { font-size: 0.9rem; margin-bottom: 16px; }
+    .breadcrumb a { text-decoration: none; }
+    .guide-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .guide-header i { font-size: 1.6rem; }
+    .guide-meta { color: #777; font-size: 0.95rem; margin-bottom: 24px; }
+    .guide-content h3 { margin-top: 28px; }
+    .guide-actions { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display:inline-block; padding: 10px 14px; border-radius: 8px; text-decoration: none; border:1px solid #eee; }
+    .btn-primary { background: var(--primary-strong); color: #fff; border: none; }
+    .btn-outline { background:#fff; }
+    .img-box { background: #f6f6f9; border:1px solid #eee; border-radius:12px; height: 280px; display:grid; place-items:center; color:#666; }
+    .notice { background: #FFF8F0; border-left: 4px solid #F7AC8C; padding: 12px 14px; border-radius: 8px; margin: 20px 0; }
+    footer { text-align:center; padding: 32px 0 48px; color:#777; }
+  
+    /* Right-align only the "맨 위로" button */
+    .guide-actions .btn-outline { margin-left: auto; }
+
+    /* Floating "맨 위로" button */
+    .btn-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--primary-strong);
+      color: #fff;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: background 0.2s ease;
+      z-index: 999;
+    }
+    .btn-to-top:hover {
+      background: var(--primary-soft);
+    }
+
+</style>
+</head>
+<body>
+  
+  <main class="guide-wrap">
+    <div class="breadcrumb"><a href="index.html">홈으로</a></div>
+    <div class="guide-header">
+      <i class="fas fa-file-excel"></i>
+      <h1 class="section-title" style="margin:0;">엑셀 다운로드</h1>
+    </div>
+    <div class="guide-meta">
+      이 문서는 Auto QA의 <strong>엑셀 다운로드</strong> 절차를 안내합니다. 아래 단계와 스크린샷을 참고해 따라 해보세요.
+    </div>
+    <div class="guide-content">
+
+<h3>1) 리스트/상세에서 다운로드</h3>
+<p>콜 목록 화면에서 <strong>“엑셀 내려받기”</strong> 버튼을 눌러 데이터를 내려받습니다.</p>
+<div class="img-box"><img src="images/guide-excel/Table.png" alt="콜 목록 화면의 엑셀 내려받기 버튼" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:10px auto 0;"></div>
+
+
+<h3>2) 다운로드 사유 선택</h3>
+<ul>
+  <li>콜 데이터를 내려받기 전에 반드시 <strong>다운로드 사유</strong>를 선택해야 합니다.</li>
+  <li>사유 선택은 데이터 사용 목적을 명확히 하여 <strong>보안 사고를 예방</strong>하기 위한 절차입니다.</li>
+  <li>본 정보를 무단으로 외부에 유출할 경우, 관련 법률에 따라 <strong>최대 징역 5년, 5천만원 이하의 벌금</strong>이 부과될 수 있습니다.</li>
+  <li>불필요한 다운로드를 최소화하고, <strong>승인된 목적</strong> 내에서만 데이터를 활용하세요.</li>
+</ul>
+<div class="img-box">
+  <img src="images/guide-excel/reason.png" alt="다운로드 사유 선택 화면" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:10px auto 0;">
+</div>
+<div class="guide-actions"><div class="guide-actions">
+        
+        <a class="btn" href="guide-detail.html"><i class="fa-solid fa-arrow-left"></i>&nbsp;상세조회 방법</a>
+        <a class="btn" href="guide-feedback.html">피드백 제출&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    
+    </div>
+  </main>
+  <footer>&copy; 2025 LGUplus. All rights reserved.</footer>
+
+<a href="#top" class="btn-to-top" aria-label="맨 위로">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+<script>
+document.querySelector('.btn-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+<style>
+  /* page-only override: excel screenshot */
+  .guide-content .img-box { 
+    background: transparent; 
+    border: 0; 
+    height: auto; 
+    padding: 0; 
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  .guide-content .img-box img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+</style>
+</body>
+</html>
