@@ -582,13 +582,3 @@ section > h2, .section-title {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
-
-
-/* ===== Remove default link underline and blue color ===== */
-a {
-  color: inherit;        /* Use parent element's color */
-  text-decoration: none; /* Remove underline */
-}
-a:hover {
-  text-decoration: underline; /* Optional: underline on hover */
-}
