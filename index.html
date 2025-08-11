@@ -1,176 +1,149 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome 아이콘 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Font Awesome 아이콘 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/><link href="guide-links.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header>
-  <nav>
-    <a href="#intro">소개</a>
-    <a href="#features">주요 기능</a>
-    <a href="#guide">사용 가이드</a>
-    <a href="#demo">시연</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">문의</a>
-  </nav>
+<nav>
+<a href="#intro">소개</a>
+<a href="#features">주요 기능</a>
+<a href="#guide">사용 가이드</a>
+<a href="#demo">시연</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">문의</a>
+</nav>
 </header>
-
 <!-- Hero Section -->
 <div class="hero" id="hero">
 <h1>상담 품질 평가의 새로운 기준</h1>
-  <p>AI가 상담 대화를 분석하고, 품질 향상을 위한 즉각적인 피드백을 제공합니다.</p>
-  <a href="#features" class="btn-primary">자세히 알아보기</a>
+<p>AI가 상담 대화를 분석하고, 품질 향상을 위한 즉각적인 피드백을 제공합니다.</p>
+<a class="btn-primary" href="#features">자세히 알아보기</a>
 </div>
-
 <!-- 소개 섹션 -->
-<section id="intro" class="intro">
-
-  <div class="intro__wrap">
-    <h2 class="section-title">Auto QA란?</h2>
+<section class="intro" id="intro">
+<div class="intro__wrap">
+<h2 class="section-title">Auto QA란?</h2>
 <p class="section-lead">
-  Auto QA는 <strong>상담 대화(STT) 분석</strong>을 통해 <strong>표준협회 19개 평가 항목</strong>을 <strong>AI가 점검하고</strong>·<strong>그 근거와 개선방안을 제공</strong>하며, <BR><strong>빠르고 정확한 피드백</strong>으로 상담 품질 향상을 돕는 <strong>AI 코칭 도구</strong>입니다.
+  Auto QA는 <strong>상담 대화(STT) 분석</strong>을 통해 <strong>표준협회 19개 평가 항목</strong>을 <strong>AI가 점검하고</strong>·<strong>그 근거와 개선방안을 제공</strong>하며, <br/><strong>빠르고 정확한 피드백</strong>으로 상담 품질 향상을 돕는 <strong>AI 코칭 도구</strong>입니다.
 </p>
-
-
-
-    <!-- 비교 카드 레이아웃 -->
-    <div class="compare-cards" aria-label="기존과 Auto QA 적용 시 비교">
-      <!-- 기존 -->
-      <article class="compare-card old" tabindex="0">
-        <h3>기존</h3>
-        <ul>
-          <li>일부 상담만 골라서 검수하다 보니,<br>놓치는 부분이 많아요.</li>
-          <li>피드백이 며칠 뒤에 와서,<br>개선 속도가 느려요.</li>
-          <li>평가하는 사람마다 기준이 달라서<br>결과가 들쑥날쑥해요.</li>
-        </ul>
-      </article>
-
-      <!-- Auto QA 적용 시 -->
-      <article class="compare-card new" tabindex="0">
-        <h3>Auto QA 적용 시</h3>
-        <ul>
-          <li>모든 상담을 전수 분석하고, 발화 단위로<br>규칙 위반을 자동 탐지해 놓침을 최소화해요.</li>
-          <li>전날(09시~19시) 상담 결과를<br>다음 날 아침 8시에 바로 받아볼 수 있어요.</li>
-          <li>잘한 부분과 아쉬운 부분을 원문 구간<br>하이라이트로 보여줘 한눈에 이해 가능해요.</li>
-          <li>지표와 세부 항목을 엑셀로 내려받아<br>필요하면 더 깊게 분석할 수 있어요.</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-
+<!-- 비교 카드 레이아웃 -->
+<div aria-label="기존과 Auto QA 적용 시 비교" class="compare-cards">
+<!-- 기존 -->
+<article class="compare-card old" tabindex="0">
+<h3>기존</h3>
+<ul>
+<li>일부 상담만 골라서 검수하다 보니,<br/>놓치는 부분이 많아요.</li>
+<li>피드백이 며칠 뒤에 와서,<br/>개선 속도가 느려요.</li>
+<li>평가하는 사람마다 기준이 달라서<br/>결과가 들쑥날쑥해요.</li>
+</ul>
+</article>
+<!-- Auto QA 적용 시 -->
+<article class="compare-card new" tabindex="0">
+<h3>Auto QA 적용 시</h3>
+<ul>
+<li>모든 상담을 전수 분석하고, 발화 단위로<br/>규칙 위반을 자동 탐지해 놓침을 최소화해요.</li>
+<li>전날(09시~19시) 상담 결과를<br/>다음 날 아침 8시에 바로 받아볼 수 있어요.</li>
+<li>잘한 부분과 아쉬운 부분을 원문 구간<br/>하이라이트로 보여줘 한눈에 이해 가능해요.</li>
+<li>지표와 세부 항목을 엑셀로 내려받아<br/>필요하면 더 깊게 분석할 수 있어요.</li>
+</ul>
+</article>
+</div>
+</div>
 </section>
-
 <section id="features">
-  <h2>주요 기능</h2>
-  <div class="features">
-    <div class="card">
-      <div class="icon">💡</div>
-      <div class="card-title">AI기반 상담 품질 분석</div>
-      <div class="card-desc">말풍선 단위로 규칙을 점검하여,<br>항목별 점수와 근거(감점 구간) 제공</div>
-    </div>
-    <div class="card">
-      <div class="icon">⚡</div>
-      <div class="card-title">빠른 피드백 제공</div>
-      <div class="card-desc">전일 콜 리포트를 <br>익일 오전 08시 50분에 제공</div>
-    </div>
-    <div class="card">
-      <div class="icon">📊</div>
-      <div class="card-title">엑셀 다운로드</div>
-      <div class="card-desc">지표/세부 항목을 엑셀로 내려받아 <br>자유롭게 2차 가공 가능</div>
-    </div>
-  </div>
+<h2>주요 기능</h2>
+<div class="features">
+<div class="card">
+<div class="icon">💡</div>
+<div class="card-title">AI기반 상담 품질 분석</div>
+<div class="card-desc">말풍선 단위로 규칙을 점검하여,<br/>항목별 점수와 근거(감점 구간) 제공</div>
+</div>
+<div class="card">
+<div class="icon">⚡</div>
+<div class="card-title">빠른 피드백 제공</div>
+<div class="card-desc">전일 콜 리포트를 <br/>익일 오전 08시 50분에 제공</div>
+</div>
+<div class="card">
+<div class="icon">📊</div>
+<div class="card-title">엑셀 다운로드</div>
+<div class="card-desc">지표/세부 항목을 엑셀로 내려받아 <br/>자유롭게 2차 가공 가능</div>
+</div>
+</div>
 </section>
-
 <section id="guide">
-  <h2>사용 가이드</h2>
-  <div class="guide-steps">
-
-    <a class="step" href="guide-login.html">
-      <i class="fas fa-right-to-bracket"></i>
-      <p><strong>접속 방법</strong><br><small>상담어드바이저 앱에서 접속이 가능합니다.</small></p>
-    </a>
-
-    <a class="step" href="guide-search.html">
-      <i class="fas fa-list-alt"></i>
-      <p><strong>검색 방법</strong><br><small>조직 및 콜 정보로 검색이 가능합니다.</small></p>
-    </a>
-
-    <a class="step" href="guide-detail.html">
-      <i class="fas fa-search"></i>
-      <p><strong>상세조회 방법</strong><br><small>1개의 콜에 대해서 항목별 점수와 감점구간을 확인할 수 있습니다.</small></p>
-    </a>
-
-    <a class="step" href="guide-excel.html">
-      <i class="fas fa-file-excel"></i>
-      <p><strong>엑셀 다운로드</strong><br><small>엑셀을 통해서 자유롭게 가공이 가능합니다.</small></p>
-    </a>
-
-    <a class="step" href="guide-feedback.html">
-      <i class="fas fa-comment-dots"></i>
-      <p><strong>피드백 제출</strong><br><small>개선 포인트를 제보할 수 있습니다.</small></p>
-    </a>
-
-  </div>
+<h2>사용 가이드</h2>
+<div class="guide-steps">
+<a class="step" href="guide-login.html">
+<i class="fas fa-right-to-bracket"></i>
+<p><strong>접속 방법</strong><br/><small>상담어드바이저 앱에서 접속이 가능합니다.</small></p>
+</a>
+<a class="step" href="guide-search.html">
+<i class="fas fa-list-alt"></i>
+<p><strong>검색 방법</strong><br/><small>조직 및 콜 정보로 검색이 가능합니다.</small></p>
+</a>
+<a class="step" href="guide-detail.html">
+<i class="fas fa-search"></i>
+<p><strong>상세조회 방법</strong><br/><small>1개의 콜에 대해서 항목별 점수와 감점구간을 확인할 수 있습니다.</small></p>
+</a>
+<a class="step" href="guide-excel.html">
+<i class="fas fa-file-excel"></i>
+<p><strong>엑셀 다운로드</strong><br/><small>엑셀을 통해서 자유롭게 가공이 가능합니다.</small></p>
+</a>
+<a class="step" href="guide-feedback.html">
+<i class="fas fa-comment-dots"></i>
+<p><strong>피드백 제출</strong><br/><small>개선 포인트를 제보할 수 있습니다.</small></p>
+</a>
+</div>
 </section>
-
 <section id="demo">
-  <h2>시연 영상</h2>
-  <div class="video-placeholder">
-    <p>📹 시연 영상 준비 중...</p>
-  </div>
+<h2>시연 영상</h2>
+<div class="video-placeholder">
+<p>📹 시연 영상 준비 중...</p>
+</div>
 </section>
-
 <!-- FAQ -->
 <section id="faq">
-  <h2>FAQ</h2>
-
-  <div class="faq-item">
-    <button class="faq-question" aria-expanded="false">
+<h2>FAQ</h2>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
       어떤 데이터를 기반으로 평가하나요? <span>+</span>
-    </button>
-    <div class="faq-answer" role="region" aria-hidden="true">
+</button>
+<div aria-hidden="true" class="faq-answer" role="region">
       상담 음성을 텍스트(STT)로 변환한 대화 내용과 로그를 기반으로, 항목별 규칙 위반을 자동 분석합니다.
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" aria-expanded="false">
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
       결과는 언제 받아볼 수 있나요? <span>+</span>
-    </button>
-    <div class="faq-answer" role="region" aria-hidden="true">
+</button>
+<div aria-hidden="true" class="faq-answer" role="region">
       전날(09:00~19:00) 상담 내용을 기준으로, 익일 오전 8시 30분에 분석 결과를 제공합니다.
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" aria-expanded="false">
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">
       엑셀 다운로드에는 어떤 정보가 들어있나요? <span>+</span>
-    </button>
-    <div class="faq-answer" role="region" aria-hidden="true">
+</button>
+<div aria-hidden="true" class="faq-answer" role="region">
       콜 상세 화면에 나오는 모든 내용을 엑셀에서 확인할 수 있습니다.
     </div>
-  </div>
+</div>
 </section>
-
-
 <section id="contact">
-  <h2>문의 및 지원</h2>
-  <p>📧 상담어드바이저 스쿼드 <strong>장원재</strong></p>
-  <p>✉ <a href="mailto:Jangwj@lguplus.co.kr">Jangwj@lguplus.co.kr</a></p>
-  <p>☎ <a href="tel:010-8080-2768">010-8080-2678</a></p>
+<h2>문의 및 지원</h2>
+<p>📧 상담어드바이저 스쿼드 <strong>장원재</strong></p>
+<p>✉ <a href="mailto:Jangwj@lguplus.co.kr">Jangwj@lguplus.co.kr</a></p>
+<p>☎ <a href="tel:010-8080-2768">010-8080-2678</a></p>
 </section>
-
 <footer>
-  &copy; 2025 LGUplus. All rights reserved.
+  © 2025 LGUplus. All rights reserved.
 </footer>
-
 <script>
   // 스크롤 애니메이션
   const sections = document.querySelectorAll("section");
@@ -195,6 +168,5 @@
     });
   });
 </script>
-
 </body>
 </html>
