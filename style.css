@@ -592,3 +592,52 @@ a {
 a:hover {
   text-decoration: underline; /* Optional: underline on hover */
 }
+
+
+/* 빨간 X */
+}
+
+.compare-card .icon.green {
+  color: #22C55E; /* 초록 V */
+}
+
+/* Compare Card 초록 V 스타일 */
+.compare-card.new li::before {
+  content: "✔";
+  color: #22C55E;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.compare-card.old li::before {
+  content: "";
+  margin-right: 0;
+}
+.compare-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+
+/* === Compare Cards override inside #intro === */
+/* 기존에 #intro li::before 에서 빨간 ✔을 주입하던 규칙을 비교 카드 내부에선 비활성화 */
+#intro .compare-cards li::before {
+  content: "" !important;
+}
+
+/* Auto QA(오른쪽)만 초록 ✔ 표시 — 기존 빨간 ✔과 동일한 글리프 사용 */
+#intro .compare-card.new li::before {
+  content: "✔" !important;
+  color: #22C55E !important;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+
+/* 기존(왼쪽) 카드에 빨간 X 표시 */
+#intro .compare-card.old li::before {
+  content: "✕" !important;
+  color: #D92D20 !important;
+  font-weight: 700;
+  margin-right: 8px;
+}
